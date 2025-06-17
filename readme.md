@@ -16,5 +16,3 @@ your output in the browser.
 - Standard library with:
     - pre-made types (e.g. vec2, vec3, color)
     - useful libraries (e.g. math, physics, noise, etc)
-
-# nimblelang
