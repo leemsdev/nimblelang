@@ -1,1 +1,30 @@
-hello
+
+x := 10
+
+
+
+add: int, int -> int
+add :: a, b => a + b 
+
+const x = (a, b) => a + b
+
+s = 20
+main :: {
+	a:=1
+	b:=2
+
+	res :: {
+	  x (a, b)
+	}
+
+	x := if x then y else n
+
+	i := x() or return
+}
+
+main :: {
+	
+	x := add 10 10 	    *10 30                     .
+
+	xcolon_equalsaddopen_paren10comma10close_paren
+}
