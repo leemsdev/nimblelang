@@ -1,14 +1,6 @@
-
-x := 10
-
-
-
 add: int, int -> int
 add :: a, b => a + b 
 
-const x = (a, b) => a + b
-
-s = 20
 main :: {
 	a:=1
 	b:=2
@@ -20,6 +12,9 @@ main :: {
 	x := if x then y else n
 
 	i := x() or return
+
+	// python list comprehension
+	positions: vec2[] = [x; for x in range 0..10; x* 10]
 }
 
 main :: {

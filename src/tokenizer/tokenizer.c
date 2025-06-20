@@ -1,6 +1,5 @@
 #include "../include/tokenizer.h"
 #include "stdlib.h"
-#include <stdio.h>
 #include <string.h>
 
 /* TODO: Make an actual collection type to handle dyn resizing. */

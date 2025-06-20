@@ -24,15 +24,21 @@ struct nl_token nl_op_parse(int start, const char *src)
 		case ':': {
 			if (char_at(start + 1, src) == '=') {
 				return nl_token_make(NL_TOK_COLON_EQ, ":=");
-			} else {
-				return nl_token_make(NL_TOK_COLON, ":");
+			}
+			
+			return nl_token_make(NL_TOK_COLON, ":");
+		}
+
+		case '+': {
+			if (char_at(start + 1, src) == '+') {
+				return nl_token_make(NL_TOK_PLUS_PLUS, "++");
 			}
 
-			break;
+			return nl_token_make(NL_TOK_PLUS, "+");
 		}
 
 		default: {
-			printf("Invalid character passed to nl_op_parse: %c", current);
+			printf("\nInvalid character passed to nl_op_parse: %c\n", current);
 			exit(-1);
 		}	
 	}

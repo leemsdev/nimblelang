@@ -2,11 +2,23 @@
 #define TOKEN_H
 
 enum nl_token_type {
-	NL_TOKEN_IDENT,
+	/* Identifiers and Keywords */
+	NL_TOK_IDENT,
+
+	/* Assignment Operators */
 	NL_TOK_EQ, 
 	NL_TOK_COLON, 
 	NL_TOK_COLON_EQ,
+
+	/* Math Operators */
+	NL_TOK_PLUS,
+	NL_TOK_PLUS_PLUS,
+
+	/* Whitespace */
 	NL_TOK_SPACE,
+
+	/* Numbers */
+	NL_TOK_INT
 };
 
 struct nl_token {
